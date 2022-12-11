@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--using font-awesome as another stylesheet: cdnjs.com/libraries/font-awesome and copy the top link (latest version)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container"> <!--create a container "container", and another container inside of that one "message"-->
+        <div class="message">   <!--within "message" container, we will create our form-->
+            <p>     <!--three p tags for the different sections of our form-->
+                <h3 style="text-align:center; font-weight:bold;">Pass the message</h3> <!--some inline css style-->
+            </p>
+            <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p> <!--to separate our sections visually-->
+            <p>     <!--this is where the input box is going to go-->
+                <label for="message-input">Enter a message</label>  <!--"message-input" is the id we are giving our input box-->
+                <br>
+                <!--next we are going to create a button using an icon from font-awesome website and past the html inbetween the button tags.-->
+                <button style="border-radius: 5px 0 0 5px;"><i class="fa-regular fa-envelope"></i></button>
+                <input id="message-input" type="text">  <!--input box with the id we named "message-input"-->
+            </p>
+            <p>
+                <button onClick="getMessage()">Submit</button>  <!--onClick="getMessage()" function: this is where the user will be able to click and submit their input.-->
+            </p>
+            <p id="message-output" style="text-align:center; text-transform: uppercase;"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
