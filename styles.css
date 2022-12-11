@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(rgb(133, 125, 202), rgb(247, 243, 243));
+    overflow: hidden;   /*Set Overflow to hidden to prevent unwanted horizontal scrolling and extra whitespace in your project when elements exist outside the viewport.*/
+}
+/*style the submit button*/
+button {
+    width: fit-content;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    border-radius: 5px;     /*gives it round edges*/
+    background: whitesmoke;
+}
+
+button:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+.container {
+   /* border: 1px solid black;*/        /*temporary border so we can see the changes as we make them*/
+    width: 95%;
+    height: 100vh;
+    margin: auto;   /*places the container in the middle of the screen*/
+    display: flex;
+    justify-content: center;    /*places text horizontally in the center (x-axis)*/
+    align-items: center;    /*places text vertically in the center (y-axis)*/
+}
+
+.message {
+    border: 1px solid lightgray;
+    background: whitesmoke;
+    border-radius: 5px;
+    width: 500px;
+    height: auto;   /*doing auto here so that it can expand depending on how many characters the user inputs*/
+    margin: auto;   /*to place our container in the center.*/
+    padding: 0 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+}
+
+.message input {
+    width: 90%;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media(max-width: 480px) {  /*media query makes the width smaller on devices 480px or less*/
+    .message input[
+        width: 82%;
+    ]
+}
