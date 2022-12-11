@@ -8,9 +8,9 @@ The message is then seen as output below the input field via the enter key or th
 
 ## Credits
 
-https://youtu.be/SgyLy6BlAcI
-https://cdnjs.com/libraries/font-awesome
-https://fontawesome.com/icons
+https://youtu.be/SgyLy6BlAcI,
+https://cdnjs.com/libraries/font-awesome,
+https://fontawesome.com/icons,
 
 ## License
 
